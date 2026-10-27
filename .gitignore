@@ -1,0 +1,14 @@
+.gradle/
+**/build/
+local.properties
+dist/
+node_modules/
+test-results/
+*.jks
+*.keystore
+*.key
+*.log
+build-project.cjs
+finalize.cjs
+add-author.cjs
+prepare-publish.cjs
