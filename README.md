@@ -20,7 +20,6 @@ cookyou 是一款轻松、简单的 Android 离线食谱 App。输入手上已�
 - **30 道家常菜**：炒菜、汤、粥、面和蒸菜，附用量、调料和厨具。
 - **分步跟做**：一步一步看做法，支持前后切换。
 - **本地收藏**：食材和收藏保存在手机本机。
-- **厨师彩蛋**：输入或搜索“gzh”，打开隐藏的厨师介绍。
 
 不需要注册或联网，不申请网络、相机或通讯录权限。清除应用数据或卸载会移除本地收藏。
 
@@ -34,7 +33,6 @@ cookyou 是一款轻松、简单的 Android 离线食谱 App。输入手上已�
 - `app/src/main/java/com/cookyou/app/`：Android Activity 与本地页面加载。
 - `data/recipes.json`：30 道菜谱的数据副本。
 - `docs/`：截图与版本说明。
-- `test-ui.cjs` / `test-author.cjs`：主要交互和厨师彩蛋检查。
 
 当前采用 Android WebView 加载 APK 内置页面，无远程服务依赖。菜谱为项目内整理的示例，尚未逐道实厨验证；时间为估算，需按食材厚度、设备与实际熟度调整。
 
@@ -73,7 +71,7 @@ npx playwright install chromium
 npm test
 ```
 
-可设置 `COOKYOU_BROWSER_CHANNEL=msedge` 使用本机 Edge。检查覆盖食材匹配、搜索、详情、收藏持久化、分步做菜、同义食材、320/390/600 像素布局及彩蛋准确文案。
+可设置 `COOKYOU_BROWSER_CHANNEL=msedge` 使用本机 Edge。检查覆盖食材匹配、搜索、详情、收藏持久化、分步做菜、同义食材、320/390/600 像素布局等交互。
 
 ## 作者
  [Scdxg](https://github.com/Scdxg)
